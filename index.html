@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Netflix Demo</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,221 +14,228 @@
     />
   </head>
 
-  <body class="text bg-dark">
-    <nav class="navbar navbar-expand-lg p-3">
-      <div class="container-fluid">
-        <img
-          class="nav-brand"
-          src="./Netflix-assets/assets/netflix_logo.png"
-          alt="Netflix Logo"
-          style="max-width: 100px"
-        />
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link text-white" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white Active" href="#">TV Show</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Movies</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Recently added</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">My list</a>
-            </li>
-          </ul>
-          <li class="nav-item d-inline p-3">
-            <a class="icon-link text-white" href="#">
-              <i class="bi bi-search"></i>
-            </a>
-          </li>
-          <li class="nav-item d-inline p-1">
-            <a class="nav-link text-white" href="#">Kids</a>
-          </li>
-          <li class="nav-item d-inline p-3">
-            <a class="icon-link text-white" href="#">
-              <i class="bi bi-bell-fill"></i>
-            </a>
-          </li>
-          <li class="nav-item dropdown d-inline">
-            <a
-              class="nav-link dropdown-toggle text-white"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
+  <body class="text bg-dark p-3">
+    <div class="container-fluid">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <img
+              class="nav-brand"
+              src="./Netflix-assets/assets/netflix_logo.png"
+              alt="Netflix Logo"
+              style="max-width: 100px"
+            />
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
               aria-expanded="false"
+              aria-label="Toggle navigation"
             >
-              <img src="./Netflix-assets/assets/avatar.png" style="max-width: 20px" alt="icona profilo" />
-            </a>
-          </li>
-        </div>
-      </div>
-    </nav>
-    <section>
-      <div class="mt-5 mb-5">
-        <h1 class="d-inline ps-5 text-white">TV Shows</h1>
-        <div class="nav-item dropdown d-inline">
-          <button class="d-inline">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-          </button>
-          <div class="d-inline text-white">
-            <i class="bi bi-list border border-white"></i>
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link text-secondary" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white Active" href="#">TV Show</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-secondary" href="#">Movies</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-secondary" href="#">Recently added</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-secondary" href="#">My list</a>
+                </li>
+              </ul>
+              <li class="nav-item d-inline p-3">
+                <a class="icon-link text-white" href="#">
+                  <i class="bi bi-search"></i>
+                </a>
+              </li>
+              <li class="nav-item d-inline p-1">
+                <a class="nav-link text-white" href="#">KIDS</a>
+              </li>
+              <li class="nav-item d-inline p-3">
+                <a class="icon-link text-white" href="#">
+                  <i class="bi bi-bell-fill"></i>
+                </a>
+              </li>
+              <li class="nav-item dropdown d-inline">
+                <a
+                  class="nav-link dropdown-toggle text-white"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="./Netflix-assets/assets/avatar.png" style="max-width: 20px" alt="icona profilo" />
+                </a>
+              </li>
+            </div>
           </div>
-          <div class="d-inline text-white">
-            <i class="bi bi-grid-fill border border-white"></i>
+        </nav>
+        <section>
+          <div class="mt-5 mb-5">
+            <div class="d-flex justify-content-between">
+              <div>
+                <h1 class="d-inline text-white">TV Shows</h1>
+                <div class="nav-item dropdown d-inline">
+                  <button class="d-inline text-bg-dark border border-white ms-4">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Generes
+                    </a>
+                  </button>
+                </div>
+              </div>
+              <div>
+                <div class="d-inline text-white">
+                  <i class="bi bi-list border border-white"></i>
+                </div>
+                <div class="d-inline text-white">
+                  <i class="bi bi-grid-fill border border-white"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div>
+          <h3 class="ps-1 text-white">Trending Now</h3>
+        </div>
+        <div class="text-center">
+          <div class="row g-1">
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
+              <img
+                src="./Netflix-assets/assets/media/media0.webp"
+                style="max-width: 100%; object-fit: contain"
+                alt="Sherlock"
+              />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <img src="./Netflix-assets/assets/media/media1.jpg" style="max-width: 100%; object-fit: cover" alt="" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <img src="./Netflix-assets/assets/media/media10.jpg" style="max-width: 100%; object-fit: cover" alt="" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <img src="./Netflix-assets/assets/media/media11.jpg" style="max-width: 100%; object-fit: cover" alt="" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <img src="./Netflix-assets/assets/media/media12.jpg" style="max-width: 100%; object-fit: cover" alt="" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <img src="./Netflix-assets/assets/media/media13.jpg" style="max-width: 100%; object-fit: cover" alt="" />
+            </div>
           </div>
         </div>
+        <div>
+          <h3 class="ps-1 text-white">Watch It Again</h3>
+        </div>
+        <div class="text-center">
+          <div class="row g-1">
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
+              <img
+                src="./Netflix-assets/assets/media/media14.webp"
+                style="max-width: 100%; object-fit: contain"
+                alt="Sherlock"
+              />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <img src="./Netflix-assets/assets/media/media15.jpg" style="max-width: 100%; object-fit: cover" alt="" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <img src="./Netflix-assets/assets/media/media16.webp" style="max-width: 100%; object-fit: cover" alt="" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <img src="./Netflix-assets/assets/media/media17.jpg" style="max-width: 100%; object-fit: cover" alt="" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <img src="./Netflix-assets/assets/media/media18.jpg" style="max-width: 100%; object-fit: cover" alt="" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <img src="./Netflix-assets/assets/media/media19.webp" style="max-width: 100%; object-fit: cover" alt="" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="ps-1 text-white">New Releases</h3>
+        </div>
+        <div class="text-center">
+          <div class="row g-1">
+            <div class="col-6 col-md-4 col-lg-2">
+              <img
+                src="./Netflix-assets/assets/media/media20.jpg"
+                style="max-width: 100%; object-fit: contain"
+                alt="Sherlock"
+              />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-5">
+              <img src="./Netflix-assets/assets/media/media21.webp" style="max-width: 100%; object-fit: cover" alt="" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <img src="./Netflix-assets/assets/media/media22.webp" style="max-width: 100%; object-fit: cover" alt="" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <img src="./Netflix-assets/assets/media/media23.webp" style="max-width: 100%; object-fit: cover" alt="" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <img src="./Netflix-assets/assets/media/media24.jpg" style="max-width: 100%; object-fit: cover" alt="" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <img src="./Netflix-assets/assets/media/media25.webp" style="max-width: 100%; object-fit: cover" alt="" />
+            </div>
+          </div>
+        </div>
+        <footer id="footer">
+          <div class="pb-3 text-secondary">
+            <i class="bi bi-facebook p-1"></i>
+            <i class="bi bi-instagram p-1"></i>
+            <i class="bi bi-twitter p-1"></i>
+            <i class="bi bi-youtube"></i>
+          </div>
+          <div class="container d-flex f-start">
+            <div class="row">
+              <div class="col-3 text-secondary">
+                <p class="pb-1"><a href="#"></a>Audio and Subtitles</p>
+                <p class="pb-1"><a href="#"></a>Media Center</p>
+                <p class="pb-1"><a href="#"></a>Privacy</p>
+                <p class="pb-1"><a href="#"></a>Contact Us</p>
+              </div>
+              <div class="col-3 text-secondary">
+                <p class="pb-1"><a href=""></a>Audio Description</p>
+                <p class="pb-1"><a href=""></a>Investor Relations</p>
+                <p class="pb-1"><a href=""></a>Legal Notices</p>
+              </div>
+              <div class="col-3 text-secondary">
+                <p class="pb-1"><a href=""></a>Help Center</p>
+                <p class="pb-1"><a href=""></a>Jobs</p>
+                <p class="pb-1"><a href=""></a>Coockie Preference</p>
+              </div>
+              <div class="col-3 text-secondary">
+                <p class="pb-1"><a href=""></a>Gift Cards</p>
+                <p class="pb-1"><a href=""></a>Terms Of Use</p>
+                <p class="pb-1"><a href=""></a>Corporate Information</p>
+              </div>
+              <div class="d-flex f-start text-secondary">
+                <button class="text-bg-dark border border-secondary text-secondary">Service Code</button>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
-    </section>
-    <div>
-      <h3 class="ps-5 text-white">Trending Now</h3>
     </div>
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-2 mb-3">
-          <img
-            src="./Netflix-assets/assets/media/media0.webp"
-            style="max-width: 100%; object-fit: contain"
-            alt="Sherlock"
-          />
-        </div>
-        <div class="col-2">
-          <img src="./Netflix-assets/assets/media/media1.jpg" style="max-width: 100%; object-fit: cover" alt="" />
-        </div>
-        <div class="col-2">
-          <img src="./Netflix-assets/assets/media/media10.jpg" style="max-width: 100%; object-fit: cover" alt="" />
-        </div>
-        <div class="col-2">
-          <img src="./Netflix-assets/assets/media/media11.jpg" style="max-width: 100%; object-fit: cover" alt="" />
-        </div>
-        <div class="col-2">
-          <img src="./Netflix-assets/assets/media/media12.jpg" style="max-width: 100%; object-fit: cover" alt="" />
-        </div>
-        <div class="col-2">
-          <img src="./Netflix-assets/assets/media/media13.jpg" style="max-width: 100%; object-fit: cover" alt="" />
-        </div>
-      </div>
-    </div>
-    <div>
-      <h3 class="ps-5 text-white">Watch It Again</h3>
-    </div>
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-2 mb-3">
-          <img
-            src="./Netflix-assets/assets/media/media14.webp"
-            style="max-width: 100%; object-fit: contain"
-            alt="Sherlock"
-          />
-        </div>
-        <div class="col-2">
-          <img src="./Netflix-assets/assets/media/media15.jpg" style="max-width: 100%; object-fit: cover" alt="" />
-        </div>
-        <div class="col-2">
-          <img src="./Netflix-assets/assets/media/media16.webp" style="max-width: 100%; object-fit: cover" alt="" />
-        </div>
-        <div class="col-2">
-          <img src="./Netflix-assets/assets/media/media17.jpg" style="max-width: 100%; object-fit: cover" alt="" />
-        </div>
-        <div class="col-2">
-          <img src="./Netflix-assets/assets/media/media18.jpg" style="max-width: 100%; object-fit: cover" alt="" />
-        </div>
-        <div class="col-2">
-          <img src="./Netflix-assets/assets/media/media19.webp" style="max-width: 100%; object-fit: cover" alt="" />
-        </div>
-      </div>
-    </div>
-    <div>
-      <h3 class="ps-5 text-white">New Releases</h3>
-    </div>
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-2">
-          <img
-            src="./Netflix-assets/assets/media/media20.jpg"
-            style="max-width: 100%; object-fit: contain"
-            alt="Sherlock"
-          />
-        </div>
-        <div class="col-2 mb-5">
-          <img src="./Netflix-assets/assets/media/media21.webp" style="max-width: 100%; object-fit: cover" alt="" />
-        </div>
-        <div class="col-2">
-          <img src="./Netflix-assets/assets/media/media22.webp" style="max-width: 100%; object-fit: cover" alt="" />
-        </div>
-        <div class="col-2">
-          <img src="./Netflix-assets/assets/media/media23.webp" style="max-width: 100%; object-fit: cover" alt="" />
-        </div>
-        <div class="col-2">
-          <img src="./Netflix-assets/assets/media/media24.jpg" style="max-width: 100%; object-fit: cover" alt="" />
-        </div>
-        <div class="col-2">
-          <img src="./Netflix-assets/assets/media/media25.webp" style="max-width: 100%; object-fit: cover" alt="" />
-        </div>
-      </div>
-    </div>
-    <footer>
-      <div class="text-white ps-5 pb-3">
-        <i class="bi bi-facebook"></i>
-        <i class="bi bi-instagram"></i>
-        <i class="bi bi-twitter"></i>
-        <i class="bi bi-youtube"></i>
-      </div>
-      <div class="container d-flex f-start">
-        <div class="row">
-          <div class="col-3">
-            <ul class="list-unstyled text-white">
-              <li class="pb-3"><a href="#"></a>Audio and Subtitles</li>
-              <li class="pb-3"><a href="#"></a>Media Center</li>
-              <li class="pb-3"><a href="#"></a>Privacy</li>
-              <li class="pb-3"><a href="#"></a>Contact Us</li>
-            </ul>
-          </div>
-          <div class="col-3">
-            <ul class="list-unstyled text-white">
-              <li class="pb-3"><a href=""></a>Audio Description</li>
-              <li class="pb-3"><a href=""></a>Investor Relations</li>
-              <li class="pb-3"><a href=""></a>Legal Notices</li>
-            </ul>
-          </div>
-          <div class="col-3">
-            <ul class="list-unstyled text-white">
-              <li class="pb-3"><a href=""></a>Help Center</li>
-              <li class="pb-3"><a href=""></a>Jobs</li>
-              <li class="pb-3"><a href=""></a>Coockie Preference</li>
-            </ul>
-          </div>
-          <div class="col-3">
-            <ul class="list-unstyled text-white">
-              <li class="pb-3"><a href=""></a>Gift Cards</li>
-              <li class="pb-3"><a href=""></a>Terms Of Use</li>
-              <li class="pb-3"><a href=""></a>Corporate Information</li>
-            </ul>
-          </div>
-          <div class="d-flex f-start text-white">
-            <button class="text-bg-dark border border-white">Service Code</button>
-          </div>
-        </div>
-      </div>
-    </footer>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
